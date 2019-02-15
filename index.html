@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My favourite animal. María Rosado</title>
+	<meta name="description" content="A simple content slider with my favourite animal and depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops and Maria Rosado" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>ECV <span class="bp-icon bp-icon-about" data-content="Les paresseux ou aï sont des mammifères arboricoles d'Amérique tropicale qui constituent le sous-ordre des Folivora. Ce sont des animaux de taille moyenne au mode de vie original : ils sont presque toujours suspendus à l'envers dans les arbres et se déplacent avec lenteur. Ils possèdent de longues griffes."></span></span>
+			<h1>Zoom Slider with my favourite animal</h1>
+			<nav>
+				<a href="http://tympanus.net/Blueprints/FilterableProductGrid/" class="bp-icon bp-icon-prev" data-info="previous Animal"><span>Previous Animal</span></a>
+				<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<a href="http://tympanus.net/codrops/?p=24330" class="bp-icon bp-icon-drop" data-info="back to the ECV article"><span>back to the Animal article</span></a>
+				<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Animal archive"><span>Go to the animal archive</span></a>
+			</nav>
+		</header> -->
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/iphone.png" alt="iPhone" />
+						<div class="preview">
+							<img src="images/iphone-content-preview1.png" alt="iPhone app preview" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>animal</span> Paresseux</h2>
+			</div>
+			<div class="slide" data-content="content-2" id="contentslide-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/ipad.png" alt="picture Paresseux" />
+						<div class="preview">
+							<img src="images/ipad-content-preview1.png" alt="picture Paresseux" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title" id="slepp"><span>Sleep</span></h2>
+				<p> 15 a 20 heures <p>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/macbook.png" alt="MacBook" />
+						<div class="preview">
+							<img src="images/macbook-content-preview.jpg" alt="MacBook app preview" />
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title" id="speed"><span>Speed</span> Two meters per minute</h2>
+				<!-- /slider
+	<p class="speed">Two meters per minute </p>-->
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/imac.png" alt="iMac" />
+						<div class="preview">
+							<img src="images/imac-content-preview.jpg" alt="iMac app preview" />
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Loss of habitats</span> Danger of extinction</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/apple-watch.png" alt="Apple Watch" />
+						<div class="preview rounded">
+							<img src="images/apple-watch-content-preview.png" alt="Apple Watch app preview" />
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Coat colour</span> Green with seaweed: camouflage</h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous animal</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next animal</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/iphone-content1.png" alt="Parasseux animal" />
+				<div class="content__item-inner">
+					<h2>Peresseux</h2>
+					<h3>Les paresseux ou aï sont des mammifères arboricoles d'Amérique tropicale qui constituent le sous-ordre des Folivora. Ce sont des animaux de taille moyenne au mode de vie original : ils sont presque toujours suspendus à l'envers dans les arbres et se déplacent avec lenteur. Ils possèdent de longues griffes.</p>
+					<p><a href="https://fr.wikipedia.org/wiki/Paresseux/">Learn more about this animal &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/sleep.jpg" alt="sleep" />
+				<div class="content__item-inner">
+					<h2>Sleep</h2>
+					<h3>Paresseux à gorge brune: 15 – 20 heures.</p>
+					<p><a href="https://www.apple.com/ipad-mini-3/performance/">Learn more about sleep &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/macbook-content.jpg" alt="MacBook Content" />
+				<div class="content__item-inner">
+					<h2>Sueño</h2>
+					<h3>Hacen honor a su nombre</h3>
+					<p>El perezoso duerme entre <span class="time">15 y 20 horas </span> al día. </p>
+					<p><a href="https://www.muyinteresante.es/curiosidades/preguntas-respuestas/cual-es-el-animal-que-duerme-mas-horas-al-dia-281427381756/">Leer más sobre las horas de sueño &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/imac-content.jpg" alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>Peligro de extinción</h2>
+					<h3>Pérdida de sus hábitats</h3>
+					<p>La mayoría de las especies de perezosos se encuentra en alguna clasificación de extinción, siendo el pigmeo el más amenazado. Entre sus depredadores principales se encuentran el jaguar, el águila arpía, las serpientes constrictoras y el ocelote.</p>
+					<p><a href="http://www.noticiasambientales.com.ar/es/animales/4584/">Leer más sobre su extinción &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/apple-watch-content.png" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>Su pelaje</h2>
+					<h3>De color verde debido a la formación de algas</h3>
+					<p>En su pelo suelen crecer cianobacterias y algas de color verde que aportan ese color a su pelo, permitiéndole pasar desapercibido en distintos parajes. Son capaces de nadar con mucha rapidez cuando no hay puentes que crucen un río o quebrada. </p>
+					<p><a href="https://www.xatakaciencia.com/biologia/el-perezoso-la-polilla-y-las-algas">Leer más sobre su pelaje &xrarr;</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
